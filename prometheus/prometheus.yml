@@ -34,7 +34,8 @@ scrape_configs:
     scrape_interval: 15s
 
     static_configs:
-      - targets: ['localhost:9060']
+      - targets: ['localhost:9080']
+      
 
   - job_name: 'cadvisor'
 
