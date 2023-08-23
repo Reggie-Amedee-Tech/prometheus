@@ -8,6 +8,8 @@ global:
   # external systems (federation, remote storage, Alertmanager).
   external_labels:
       monitor: 'my-project'
+  
+  
 
 # Load and evaluate rules in this file every 'evaluation_interval' seconds.
 rule_files:
@@ -34,7 +36,7 @@ scrape_configs:
     scrape_interval: 15s
 
     static_configs:
-      - targets: ['localhost:5000']
+      - targets: ['localhost:9080']
       
 
   - job_name: 'cadvisor'
