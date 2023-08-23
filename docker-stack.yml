@@ -22,7 +22,7 @@ services:
       - '--web.enable-lifecycle'
       - '--web.enable-admin-api'
     ports:
-      - 9090:9090
+      - 9080:9080
     depends_on:
       - cadvisor
 #      - pushgateway
