@@ -91,7 +91,7 @@ The Slack configuration requires to build a custom integration.
 * Copy the Webhook URL into the `alertmanager/config.yml` URL section
 * Fill in Slack username and channel
 
-View Prometheus alerts `http://<Host IP Address>:9080/alerts`
+View Prometheus alerts `http://<Host IP Address>:9090/alerts`
 View Alert Manager `http://<Host IP Address>:9093`
 
 ### Test Alerts
