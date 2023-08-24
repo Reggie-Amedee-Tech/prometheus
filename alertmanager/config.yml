@@ -1,10 +1,12 @@
 route:
-  receiver: 'slack'
+  receiver: 'stmp'
 
 receivers:
-  - name: 'slack'
-#       slack_configs:
-#           - send_resolved: true
-#             username: '<username>'
-#             channel: '#<channel-name>'
-#             api_url: '<incomming-webhook-url>'
+  - name: stmp 
+    email_configs:
+      - smarthost: 'smtp.gmail.com:465'
+        auth_username: 'jeantechnical1992@gmail.com' 
+        auth_password: ""
+        from: 'jeantechnical1992@gmail.com'
+        to: 'reginald.amedee@gmail.com'
+
